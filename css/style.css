@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url(../images/BODY.png) center repeat;
+}
+.main-top{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+}
+.main-top img{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:400px){
+    .main-top{
+        height: 200px;
+    }
+}
+@media(max-width:200px){
+    .main-top{
+        height: 150px;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    animation: all 1s ease-in-out;
+}
+header .menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+header .menu ul li{
+    padding: 20px;
+    font-size: 20px;
+}
+header .menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+header .menu ul li a:hover{
+    text-decoration: underline;
+}
+.open-close-menu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(213, 203, 203, 0.3);
+    cursor: pointer;
+    display: none;
+}
+.open-close-menu i{
+    color: #815c12;
+}
+@media(max-width:765px){
+    header{
+        position: absolute;
+        top: 0;
+        left: -200px;
+        height: 100%;
+        width: 200px;
+        background-color: #815c12;
+    }
+    header .menu ul{
+        display: block;
+    }
+    header .menu ul li a{
+        color: aliceblue;
+    }
+    .open-close-menu{
+        display: block;
+    }
+    header.menu-bar.active{
+        left: 0;
+        animation: all 1s ease-in-out;
+    }
+}
+.names{
+    width: 100%;
+    text-align: center;
+}
+.names h1{
+    font-size: 40px;
+    font-family: 'Alex Brush', cursive;
+    color: #815c12;
+}
+.names h2{
+    font-size: 20px;
+    color: #815c12;font-family: 'Oswald', sans-serif;
+
+}
+.names h4{
+    font-size: 18px;
+    color: #815c12;font-family: 'Oswald', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.banner img{
+    width: calc(100% / 3);
+    /* border: 5px solid #815c12; */
+    background-color: #815c12;
+}
+@media(max-width:400px){
+    .banner img{
+        width: 100%;
+    }
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+.events .event{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    width: 300px;
+    margin: 30px;
+    border-radius: 30px;
+}
+.events .event .context{
+    margin: 20px;
+}
+.events .event .context h1, .events .event .context h4,.events .event .context p{
+    color: #fff;
+    margin: 5px;
+}
+.events .event .image{
+    height: 300px;
+}
+.events .event .image img{
+    height: 100%;
+    width: 100%;
+    border-radius:30px;
+}
+.events .event:hover{
+    background: #815c12;
+}
+
+video{
+    justify-content: center;
+    width: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
